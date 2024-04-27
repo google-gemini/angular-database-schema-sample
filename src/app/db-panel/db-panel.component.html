@@ -1,0 +1,13 @@
+<div class="section pizaazz">
+  <app-helpful-label for="prompt" label="Enter prompt">
+    Describe the type of data or the specific tables and columns you wish to create. Or, ask the model to update an
+    existing table.
+  </app-helpful-label>
+  
+  <div>
+    <input id="prompt" #prompt class="prompt" type="text" autofocus (keyup.enter)="send(prompt.value)" required
+      value="A customer database for an online retail store that tracks customers, orders and product inventory"
+      [placeholder]="database.tables.length ? 'Try describing a change to an existing table' : 'Try: player inventory in an adventure game'">
+    <button type="submit" class="button" [disabled]="waiting" (click)="send(prompt.value)">Send</button>
+  </div>
+</div>

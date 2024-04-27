@@ -1,0 +1,31 @@
+@if (database.tables.length) {
+<div class="section">
+  <app-helpful-label label="Current database schema"></app-helpful-label>
+
+  @if(database.tables.length) {
+  <div class="tables">
+    @for (table of database.tables; track $index) {
+    <table class="table">
+      <caption><code class="table-name">{{table.tableName}}</code> table</caption>
+      <thead>
+        <tr>
+          <th class="column-name">Column name</th>
+          <th class="column-type">Column type</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for (column of table.columns; track $index) {
+        <tr>
+          <td class="column-name code">{{column.columnName}}</td>
+          <td class="column-type code">{{column.columnType}}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+    }
+  </div>
+  } @else {
+  <div>None.</div>
+  }
+</div>
+}

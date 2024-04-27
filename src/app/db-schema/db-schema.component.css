@@ -1,0 +1,40 @@
+.tables {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+table {
+    margin: 12px 0;
+}
+
+table+table {
+    margin-left: 8px;
+}
+
+table th,
+table td {
+    padding: 2px 4px;
+}
+
+table caption {
+    padding: 2px 6px;
+    margin: 0 2px;
+    text-align: left;
+    background-color: #ced;
+}
+
+table th {
+    background-color: #bcd;
+}
+
+table td {
+    background-color: #def;
+}
+
+.table-column {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
+

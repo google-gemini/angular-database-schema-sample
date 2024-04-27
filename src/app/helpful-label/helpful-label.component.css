@@ -1,0 +1,12 @@
+label,
+.label {
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.help,
+.help a {
+    opacity: 0.8;
+    font-size: 0.85rem;
+    margin: 4px 0 8px;
+}

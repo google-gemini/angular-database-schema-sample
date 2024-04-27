@@ -1,0 +1,16 @@
+.pizzazz {
+    border-radius: 6px;
+    padding: 12px 16px;
+    margin: 12px 0;
+}
+
+.pizzazz.config {
+    /* border: 2px solid #fbb02f; */
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+.pizzazz.prompt {
+    border: 1px solid #a4d4fb;
+    background-color: #d2ebff;
+}

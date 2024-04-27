@@ -1,0 +1,39 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+}
+
+body>* {
+    max-width: 800px;
+}
+
+input,
+textarea {
+    font-size: 100%;
+}
+
+.section {
+    width: 100%;
+    max-width: 800px;
+}
+
+.section+.section {
+    margin-top: 24px;
+}
+
+.section>* {
+    display: flex;
+    margin-bottom: 2px;
+}
+
+code,
+.code {
+    font-family: monospace;
+}
+
+code.example,
+.code.example {
+    color: darkgreen;
+}

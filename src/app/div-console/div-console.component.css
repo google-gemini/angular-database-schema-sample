@@ -1,0 +1,88 @@
+.console:has(.log-entry) {
+    padding: 8px 4px;
+    margin: 8px 4px;
+    border: 1px solid #ff000044;
+}
+
+.banner {
+    display: flex;
+    justify-content: space-between;
+    background-color: #00000011;
+    padding: 4px;
+    margin: 0 0 8px 0;
+}
+
+.controls * + * {
+    margin-left: 8px;
+}
+
+.container {
+    height: 400px;
+    overflow: scroll;
+}
+
+.container * {
+    overflow-anchor: none;
+}
+
+.container .scroll-anchor {
+    overflow-anchor: auto;
+    height: 1px;
+}
+
+pre {
+    margin: 0;
+}
+
+.log-entry+.log-entry {
+    margin: 1em 0 0 0;
+}
+
+.log-entry {
+    border-left: 2px solid purple;
+    padding: 0 0 0 8px;
+}
+
+.log-entry .level {
+    color: purple;
+}
+
+.log-entry.debug {
+    border-left: 2px solid blue;
+}
+
+.log-entry.debug .level {
+    color: blue;
+}
+
+.log-entry.info {
+    border-left: 2px solid green;
+}
+
+.log-entry.info .level {
+    color: green;
+}
+
+.log-entry.warn {
+    border-left: 2px solid orange;
+}
+
+.log-entry.warn .level {
+    color: orange;
+}
+
+.log-entry.error {
+    border-left: 2px solid red;
+}
+
+.log-entry.error .level {
+    color: red;
+}
+
+.log-entry .datetime {
+    color: #888;
+}
+
+.log-entry .message {
+    font-weight: bold;
+}

@@ -1,0 +1,62 @@
+.last-response-type {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 3px;
+    background-color: #ddd;
+}
+
+.last-response {
+    white-space: pre-wrap;
+}
+
+/* -------- Waiting color -------- */
+
+.last-response-type.waiting {
+    background-color: orange;
+}
+
+.last-response.waiting {
+    color: orange;
+}
+
+/* -------- Unknown color -------- */
+
+.last-response-type.unknown {
+    background-color: pink;
+}
+
+.last-response.unknown {
+    color: pink;
+}
+
+/* -------- Function calls color -------- */
+
+.last-response-type.functionCalls {
+    background-color: #32c832;
+}
+
+.last-response.functionCalls {
+    color: #32c832;
+}
+
+/* -------- Text response color -------- */
+
+.last-response-type.text {
+    background-color: #7af;
+}
+
+.last-response.text {
+    color: #7af;
+}
+
+/* -------- Error color -------- */
+
+.last-response-type.error,
+.last-response-type.invalidFunctionCalls {
+    background-color: #f44;
+}
+
+.last-response.error,
+.last-response.invalidFunctionCalls {
+    color: #f44;
+}

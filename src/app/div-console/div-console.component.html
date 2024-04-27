@@ -1,0 +1,29 @@
+<div class="console">
+    @if (this.log.logMessages.length) {
+    <div class="banner">
+        <div class="controls">
+            <button (click)="toggle()" class="expand-button">
+                @if (expanded) {Collapse} @else {Expand} {{log.logMessages.length}} log message(s)
+            </button>
+            @if(expanded) {
+            <button (click)="clear()">Clear log</button>
+            <button (click)="scrollToEnd()">Scroll to end</button>
+            }
+        </div>
+        @if (expanded){
+        <div>Activity log and debug messages</div>
+        }
+    </div>
+    }
+
+    <div [hidden]="!expanded">
+        @for (m of this.log.logMessages; track $index) {
+        <div class="log-entry" [class]="m.level">
+            <pre><span class="level">{{m.level | uppercase}}</span> <span class="datetime">{{m.datetime | date : 'yyyy-MM-dd HH:mm:ss.SSS' }}</span></pre>
+            <pre class="message">{{m.message}}</pre>
+            <pre class="error">{{m.error?.stack || m.error}}</pre>
+        </div>
+        }
+        <div class="scroll-anchor" #scrollAnchor></div>
+    </div>
+</div>
