@@ -20,7 +20,7 @@ export class ModelConfigComponent implements OnInit {
   ) { }
 
   // https://ai.google.dev/gemini-api/docs/models/gemini#model-versions
-  defaultModelVersion = "gemini-1.5-pro-latest";
+  defaultModelVersion = "gemini-1.5-flash-latest";
 
   systemInstruction = `You are an AI database agent.
 
