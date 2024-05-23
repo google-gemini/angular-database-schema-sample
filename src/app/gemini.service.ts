@@ -13,7 +13,7 @@
 // limitations under the License.
 
 import { Injectable } from "@angular/core";
-import { GenerativeModel, GoogleGenerativeAI } from "@google/generative-ai";
+import { FunctionCallingMode, GenerativeModel, GoogleGenerativeAI } from "@google/generative-ai";
 import { DatabaseService } from "./database.service";
 import { functionDeclarations } from "./gemini-function-declarations";
 import { LogService } from "./log.service";
@@ -70,8 +70,8 @@ export class GeminiService {
       this.model.toolConfig = {
         functionCallingConfig: {
           // Require function calling response.
-          // mode: FunctionCallingMode.ANY,
-          // allowedFunctionNames: ["createTable", "alterTable"],
+          mode: FunctionCallingMode.ANY,
+          allowedFunctionNames: ["createTable", "alterTable"],
         }
       };
 
