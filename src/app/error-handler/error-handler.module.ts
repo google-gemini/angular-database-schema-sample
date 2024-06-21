@@ -19,10 +19,10 @@ import { LogService } from '../log.service';
 @Injectable()
 export class ErrorHandlerModule implements ErrorHandler {
   constructor(
-    private errorService: LogService,
+    private logService: LogService,
   ) { }
   handleError(err: Error) {
-    this.errorService.handle(err);
+    this.logService.handle(err);
   }
 
 }
