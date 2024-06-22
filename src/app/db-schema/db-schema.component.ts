@@ -8,7 +8,7 @@ import { HelpfulLabelComponent } from '../helpful-label/helpful-label.component'
   standalone: true,
   imports: [HelpfulLabelComponent],
   templateUrl: './db-schema.component.html',
-  styleUrl: './db-schema.component.css'
+  styleUrl: './db-schema.component.scss'
 })
 export class DbSchemaComponent {
 

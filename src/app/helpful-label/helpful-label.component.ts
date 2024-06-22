@@ -5,7 +5,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './helpful-label.component.html',
-  styleUrl: './helpful-label.component.css',
+  styleUrl: './helpful-label.component.scss',
 })
 export class HelpfulLabelComponent {
   @Input()

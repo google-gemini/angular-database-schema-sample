@@ -9,7 +9,7 @@ import { HelpfulLabelComponent } from '../helpful-label/helpful-label.component'
   standalone: true,
   imports: [HelpfulLabelComponent],
   templateUrl: './db-panel.component.html',
-  styleUrl: './db-panel.component.css'
+  styleUrl: './db-panel.component.scss'
 })
 export class DbPanelComponent {
 

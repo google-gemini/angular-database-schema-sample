@@ -20,7 +20,7 @@ import { UpperCasePipe, DatePipe } from '@angular/common';
     selector: 'app-div-console',
     standalone: true,
     templateUrl: './div-console.component.html',
-    styleUrl: './div-console.component.css',
+    styleUrl: './div-console.component.scss',
     imports: [UpperCasePipe, DatePipe],
 })
 export class DivConsoleComponent {

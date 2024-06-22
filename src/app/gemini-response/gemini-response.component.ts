@@ -8,7 +8,7 @@ import { HelpfulLabelComponent } from '../helpful-label/helpful-label.component'
   standalone: true,
   imports: [HelpfulLabelComponent],
   templateUrl: './gemini-response.component.html',
-  styleUrl: './gemini-response.component.css'
+  styleUrl: './gemini-response.component.scss'
 })
 export class GeminiResponseComponent implements AfterViewChecked {
   protected scrollAnchor = viewChild.required<ElementRef<HTMLDivElement>>('scrollAnchor');

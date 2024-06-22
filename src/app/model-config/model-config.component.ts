@@ -6,7 +6,7 @@ import { HelpfulLabelComponent } from '../helpful-label/helpful-label.component'
 @Component({
   selector: 'app-model-config',
   templateUrl: './model-config.component.html',
-  styleUrl: './model-config.component.css',
+  styleUrl: './model-config.component.scss',
   standalone: true,
   imports: [HelpfulLabelComponent]
 })
