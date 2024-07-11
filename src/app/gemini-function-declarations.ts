@@ -31,6 +31,7 @@ const columnNameSchema: FunctionDeclarationSchemaProperty = {
 const columnTypeSchema: FunctionDeclarationSchemaProperty = {
     type: FunctionDeclarationSchemaType.STRING,
     nullable: false,
+    format: "enum",
     enum: [...ColumnTypeValues],
     description:
         "Column type. Specifies the type of data that can be stored in this column.",
@@ -45,7 +46,7 @@ const columnSchema: FunctionDeclarationSchema = {
     type: FunctionDeclarationSchemaType.OBJECT,
     description: "Table column. Specifies the properties of a table column.",
     properties: tableColumnProperties,
-    required: ["columnName, columnType"],
+    required: ["columnName", "columnType"],
 };
 
 const columnsSchema: FunctionDeclarationSchemaProperty = {
