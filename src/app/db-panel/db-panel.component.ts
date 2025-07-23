@@ -3,15 +3,22 @@ import { DatabaseService } from '../database.service';
 import { GeminiService } from '../gemini.service';
 import { LogService } from '../log.service';
 import { HelpfulLabelComponent } from '../helpful-label/helpful-label.component';
+import {MatCardModule} from '@angular/material/card';
+import {MatRippleModule} from '@angular/material/core';
 
 @Component({
   selector: 'app-db-panel',
   standalone: true,
-  imports: [HelpfulLabelComponent],
+  imports: [HelpfulLabelComponent, MatCardModule, MatRippleModule],
   templateUrl: './db-panel.component.html',
   styleUrl: './db-panel.component.scss'
 })
 export class DbPanelComponent {
+  samplePrompts = [
+    'Create a new table for users to include their name, email, and favorite color',
+    'Add a new table for products. It should include a name, description, and price.',
+    'Please add a new column to the users table for their age.',
+  ];
 
   // True while waiting for Gemini API response.
   protected waiting = false;
