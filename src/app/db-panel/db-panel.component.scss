@@ -1,11 +1,30 @@
+.container {
+  display: flex;
+  gap: 1.5em;
+  align-items: center;
+}
+.sample-prompts {
+  display: flex;
+  align-items: center;
+}
+.sample-prompt-deck {
+  display: flex;
+  gap: .5em;
+}
+.sample-prompt-card {
+  font-size: 11px;
+  cursor: pointer;
+  padding: .5em;
+}
+
 input[type=text] {
-    width: 100%;
+  width: 100%;
 }
 
 button {
-    background-color: #2f9ffb;
-    border-radius: 1px;
-    border: 1px solid #767676;
-    padding: 2px 8px;
-    margin: 0 4px;
+  background-color: #2f9ffb;
+  border-radius: 1px;
+  border: 1px solid #767676;
+  padding: 2px 8px;
+  margin: 0 4px;
 }
